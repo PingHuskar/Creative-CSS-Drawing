@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #00A6B7 0%, #73FAC9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pepsi {
+  height: 300px;
+  width: 300px;
+  background: #34588e;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: relative;
+  overflow: hidden;
+}
+.pepsi::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  border-radius: 25%;
+  background: white;
+  top: -160px;
+  left: -240px;
+  transform: rotate(-18deg);
+}
+.pepsi::after {
+  position: absolute;
+  content: "";
+  height: 500px;
+  width: 550px;
+  border-radius: 50%;
+  background: #da473c;
+  top: -275px;
+  left: -300px;
+}/*# sourceMappingURL=style.css.map */
