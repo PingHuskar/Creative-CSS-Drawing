@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(60deg, #303030, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oval {
+  width: 230px;
+  height: 130px;
+  background: #FDFF00;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.oval .logo {
+  width: 212px;
+  height: 112px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+}
+.oval .logo .sq, .oval .logo .sq2, .oval .logo .sq1, .oval .logo .o, .oval .logo .o6, .oval .logo .o5, .oval .logo .o4, .oval .logo .o3, .oval .logo .o2, .oval .logo .o1 {
+  position: absolute;
+  background: #FDFF00;
+  height: 20px;
+  width: 20px;
+  top: 0;
+}
+.oval .logo .o, .oval .logo .o6, .oval .logo .o5, .oval .logo .o4, .oval .logo .o3, .oval .logo .o2, .oval .logo .o1 {
+  width: 33px;
+  height: 70px;
+  top: 67px;
+  border-radius: 50%;
+}
+.oval .logo .o1 {
+  left: 44px;
+  transform: rotate(-41deg);
+}
+.oval .logo .o2 {
+  right: 44px;
+  transform: rotate(41deg);
+}
+.oval .logo .o3 {
+  width: 38px;
+  top: 73px;
+  left: 68px;
+  transform: rotate(-15deg);
+}
+.oval .logo .o4 {
+  width: 38px;
+  top: 73px;
+  right: 68px;
+  transform: rotate(15deg);
+}
+.oval .logo .o5 {
+  width: 37px;
+  height: 40px;
+  top: 0;
+  left: 57px;
+}
+.oval .logo .o6 {
+  width: 37px;
+  height: 40px;
+  top: 0;
+  right: 57px;
+}
+.oval .logo .sq1 {
+  left: 74px;
+}
+.oval .logo .sq2 {
+  right: 74px;
+}
+.oval .logo .ears {
+  position: absolute;
+  top: 0;
+  left: 95px;
+  border-bottom: 12px solid #FDFF00;
+  border-left: 6px solid #000;
+  border-right: 6px solid #000;
+  width: 11px;
+  transform: rotate(180deg);
+}/*# sourceMappingURL=style.css.map */

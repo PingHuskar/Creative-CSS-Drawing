@@ -1,0 +1,102 @@
+$yellow : #FDFF00;
+$batColor : #000;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(60deg,#303030,$batColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oval {
+    width: 230px;
+    height: 130px;
+    background: $yellow;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .logo {
+        width: 212px;
+        height: 112px;
+        background: $batColor;
+        border-radius: 50%;
+        position: absolute;
+        .sq {
+            position: absolute;
+            background: $yellow;
+            height: 20px;
+            width: 20px;
+            top: 0;
+        }
+        .o {
+            @extend .sq;
+            width: 33px;
+            height: 70px;
+            top: 67px;
+            border-radius: 50%;
+        }
+        .o1 {
+            @extend .o;
+            left: 44px;
+            transform: rotate(-41deg);
+        }
+        .o2 {
+            @extend .o;
+            right: 44px;
+            transform: rotate(41deg);
+        }
+        .o3 {
+            @extend .o;
+            width: 38px;
+            top: 73px;
+            left: 68px;
+            transform: rotate(-15deg);
+        }
+        .o4 {
+            @extend .o;
+            width: 38px;
+            top: 73px;
+            right: 68px;
+            transform: rotate(15deg);
+        }
+        .o5 {
+            @extend .o;
+            width: 37px;
+            height: 40px;
+            top: 0;
+            left: 57px;
+        }
+        .o6 {
+            @extend .o;
+            width: 37px;
+            height: 40px;
+            top: 0;
+            right: 57px;
+        }
+        
+        .sq1 {
+            @extend .sq;
+            left: 74px;
+        }
+        .sq2 {
+            @extend .sq;
+            right: 74px;
+        }
+        .ears {
+            position: absolute;
+            top: 0;
+            left: 95px;
+            border-bottom: 12px solid $yellow;
+            border-left: 6px solid $batColor;
+            border-right: 6px solid $batColor;
+            width: 11px;
+            transform: rotate(180deg);
+        }
+    }
+}
