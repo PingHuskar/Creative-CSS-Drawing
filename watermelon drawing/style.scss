@@ -1,0 +1,34 @@
+$red : #FD6C64;
+$green : #5AF5B6;
+body {
+    margin: 0;
+    padding: 0;
+    background: #69506D;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watermelon {
+    user-select: none;
+    width: 320px;
+    height: 160px;
+    background: $red;
+    border-left: 20px solid $green;
+    border-bottom: 20px solid $green;
+    border-right: 20px solid $green;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    span {
+        width: 10px;
+        height: 10px;
+        background: #262626;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 20px;
+        &:nth-child(7), &:nth-child(12), &:nth-child(13), &:nth-child(14) {
+            opacity: 0;
+        }
+    }
+}
