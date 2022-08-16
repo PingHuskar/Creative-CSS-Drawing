@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #233637;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.git {
+  width: 150px;
+  height: 150px;
+  background: #F05033;
+  border-radius: 15px;
+  position: relative;
+  transform: rotate(45deg);
+}
+.git .line1, .git .line2 {
+  width: 110px;
+  height: 12px;
+  background: white;
+  position: absolute;
+  top: 40px;
+}
+.git .line1::before, .git .line2::before, .git .line1::after, .git .line2::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: -8px;
+}
+.git .line1::after, .git .line2::after {
+  left: 90px;
+}
+.git .line2 {
+  width: 90px;
+  height: 12px;
+  top: 70px;
+  left: 30px;
+  transform: rotate(45deg);
+}
+.git .line2::before, .git .line2::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 70px;
+  top: -8px;
+}/*# sourceMappingURL=style.css.map */
