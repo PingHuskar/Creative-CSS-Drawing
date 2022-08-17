@@ -98,4 +98,65 @@ body {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
+}
+.head .mouth {
+  position: absolute;
+  width: 115px;
+  height: 120px;
+  background: #D1B271;
+  top: 207px;
+  left: 60px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.head .mouth .mouth-part1 {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: #D1B271;
+  top: 62px;
+  left: 98px;
+  border-radius: 50%;
+  border-right: 1px solid #000;
+  transform: rotate(15deg);
+}
+.head .mouth .mouth-part2 {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: #D1B271;
+  top: 20px;
+  left: 30px;
+  border-radius: 60%;
+  border-bottom: 1px solid #000;
+  transform: rotate(-6deg);
+}
+.head .mouth-part3 {
+  position: absolute;
+  width: 35px;
+  height: 48px;
+  background: #D1B271;
+  top: 230px;
+  left: 165px;
+  border-radius: 10%;
+  border-top: 1px solid #000;
+  transform: rotate(40deg);
+}
+.head .mouth-part4 {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background: #D1B271;
+  top: 200px;
+  left: 130px;
+  border-right: 1px solid #000;
+  border-top-right-radius: 70%;
+}
+.head .mouth-part5 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #D1B271;
+  top: 260px;
+  left: 80px;
 }/*# sourceMappingURL=style.css.map */
