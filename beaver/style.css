@@ -12,7 +12,7 @@ body {
   width: 350px;
   height: 420px;
   background: #F0D0D1;
-  border: 20px solid wheat;
+  border: 20px solid white;
   position: relative;
 }
 .frame .body {
@@ -176,4 +176,31 @@ body {
   border-radius: 0 50px 50px 0;
   transform: rotate(20deg);
   transform-origin: left top;
+}
+.frame .nose {
+  position: absolute;
+  width: 56px;
+  height: 42px;
+  background: #3C2114;
+  left: 42%;
+  top: 42%;
+  border-radius: 100% 100% 40% 40%;
+}
+.frame .teeth {
+  position: absolute;
+  width: 44px;
+  height: 40px;
+  background: white;
+  left: 44%;
+  top: 53%;
+  border-radius: 5px;
+}
+.frame .teeth::before, .frame .body .teeth.heart::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #A35A37;
+  left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
