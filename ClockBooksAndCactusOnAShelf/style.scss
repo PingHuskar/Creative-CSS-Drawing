@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ECD590;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shelf {
+    width: 520px;
+    height: 20px;
+    background: #5A3F21;
+    position: relative;
+    .clock {
+        width: 110px;
+        height: 110px;
+        background: #E9E6C9;
+        border: 10px solid #5AA668;
+        border-radius: 50%;
+        position: absolute;
+        left: 30px;
+        top: -125px;
+        .knot {
+            width: 10px;
+            height: 10px;
+            background: #9D374F;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .hand {
+            @extend .knot;
+            width: 4px;
+            height: 50px;
+            background: #47321A;
+            border-radius: 0%;
+            transform: translate(-50%,-100%);
+            transform-origin: bottom;
+            z-index: 9;
+            &.hr-hand {
+                height: 30px;
+                transform: translate(-50%,-100%) rotate(-60deg);
+            }
+            &.min-hand {
+                height: 38px;
+                width: 3px;
+                transform: translate(-50%,-100%) rotate(45deg);
+            }
+            &.sec-hand {
+                height: 40px;
+                width: 2px;
+                transform: translate(-50%,-100%) rotate(180deg);
+            }
+        }
+        .clock-ear {
+            height: 30px;
+            width: 60px;
+            background: #5AA668;
+            position: absolute;
+            top: -15px;
+            border-radius: 90px 90px 0 0;
+            &::after {
+                content: "";
+                width: 15px;
+                height: 8px;
+                background: #9D374F;
+                position: absolute;
+                border-radius: 90px 90px 0 0;
+                top: -9px;
+            }
+        }
+        .clock-ear-left {
+            @extend .clock-ear;
+            left: -38px;
+            transform: rotate(-50deg);
+            &::after {
+                left: 23px;
+            }
+        }
+        .clock-ear-right {
+            @extend .clock-ear;
+            right: -38px;
+            transform: rotate(50deg);
+            &::after {
+                right: 23px;
+            }
+        }
+        .clock-foot {
+            height: 50px;
+            width: 12px;
+            background: #47321A;
+            position: absolute;
+            bottom: -25px;
+            z-index: -1;
+        }
+        .clock-foot-left {
+            @extend .clock-foot;
+            left: 20px;
+            transform: rotate(30deg);
+        }
+        .clock-foot-right {
+            @extend .clock-foot;
+            right: 20px;
+            transform: rotate(-30deg);
+        }
+    }
+}
