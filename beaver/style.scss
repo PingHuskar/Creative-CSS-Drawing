@@ -8,6 +8,35 @@ body {
     align-items: center;
 }
 
+@mixin lashes {
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #3C2114;
+    bottom: -8px;
+    left: 48%;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #3C2114;
+        top: -2px;
+        left: -10px;
+        transform: rotate(20deg);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #3C2114;
+        top: -2px;
+        transform: rotate(-20deg);
+        right: -10px;
+    }
+}
+
 .frame {
     width: 350px;
     height: 420px;
@@ -84,6 +113,51 @@ body {
                 @extend ::before;
                 transform: translateX(-50%);
             }
+        }
+    }
+    .eye {
+        position: absolute;
+        width: 20px;
+        height: 10px;
+        border: 3px solid #3C2114;
+        border-top: 0;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        top: 35%;
+    }
+    .eye-left {
+        @extend .eye;
+        left: 32%;
+        .lashes {
+            @include lashes;
+        }
+    }
+    .eye-right {
+        @extend .eye;
+        right: 32%;
+        .lashes {
+            @include lashes;
+        }
+    }
+    .muzzle {
+        position: absolute;
+        width: 87px;
+        height: 55px;
+        background: #FFD49D;
+        top: 45%;
+        left: 27%;
+        border-radius: 50px 0 0 50px;
+        transform: rotate(-10deg);
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #FFD49D;
+            left: 100%;
+            border-radius: 0 50px 50px 0;
+            transform: rotate(20deg);
+            transform-origin: left top;
         }
     }
 }
