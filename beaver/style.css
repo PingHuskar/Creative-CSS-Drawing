@@ -52,7 +52,7 @@ body {
   border-radius: 50% 15% 15% 50%;
   transform: rotate(10deg);
 }
-.frame .body .bow::before, .frame .body .bow.heart::after {
+.frame .body .bow::before, .frame .body .bow.whiskers::after, .frame .body .bow.whiskers-right::after, .frame .body .bow.whiskers-left::after, .frame .body .bow.heart::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -105,7 +105,7 @@ body {
   bottom: -8px;
   left: 48%;
 }
-.frame .eye-left .lashes::before, .frame .eye-left .body .lashes.heart::after, .frame .body .eye-left .lashes.heart::after {
+.frame .eye-left .lashes::before, .frame .eye-left .lashes.whiskers::after, .frame .eye-left .lashes.whiskers-right::after, .frame .eye-left .lashes.whiskers-left::after, .frame .eye-left .body .lashes.heart::after, .frame .body .eye-left .lashes.heart::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -136,7 +136,7 @@ body {
   bottom: -8px;
   left: 48%;
 }
-.frame .eye-right .lashes::before, .frame .eye-right .body .lashes.heart::after, .frame .body .eye-right .lashes.heart::after {
+.frame .eye-right .lashes::before, .frame .eye-right .lashes.whiskers::after, .frame .eye-right .lashes.whiskers-right::after, .frame .eye-right .lashes.whiskers-left::after, .frame .eye-right .body .lashes.heart::after, .frame .body .eye-right .lashes.heart::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -166,7 +166,7 @@ body {
   border-radius: 50px 0 0 50px;
   transform: rotate(-10deg);
 }
-.frame .muzzle::before, .frame .body .muzzle.heart::after {
+.frame .muzzle::before, .frame .muzzle.whiskers::after, .frame .muzzle.whiskers-right::after, .frame .muzzle.whiskers-left::after, .frame .body .muzzle.heart::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -195,7 +195,7 @@ body {
   top: 53%;
   border-radius: 5px;
 }
-.frame .teeth::before, .frame .body .teeth.heart::after {
+.frame .teeth::before, .frame .teeth.whiskers::after, .frame .teeth.whiskers-right::after, .frame .teeth.whiskers-left::after, .frame .body .teeth.heart::after {
   content: "";
   position: absolute;
   width: 2px;
@@ -203,4 +203,63 @@ body {
   background: #A35A37;
   left: 50%;
   transform: translateX(-50%);
+}
+.frame .whiskers, .frame .whiskers-right, .frame .whiskers-left {
+  position: absolute;
+  width: 105px;
+  height: 2px;
+  background: #7A3B1A;
+  top: 48%;
+}
+.frame .whiskers::before, .frame .whiskers-right::before, .frame .whiskers-left::before, .frame .whiskers::after, .frame .whiskers-right::after, .frame .whiskers-left::after, .frame .body .whiskers.heart::after, .frame .body .heart.whiskers-right::after, .frame .body .heart.whiskers-left::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #7A3B1A;
+  top: 15px;
+}
+.frame .whiskers::after, .frame .whiskers-right::after, .frame .whiskers-left::after {
+  top: 30px;
+}
+.frame .whiskers-left {
+  left: 10%;
+  transform: rotate(10deg);
+}
+.frame .whiskers-left::before, .frame .body .whiskers-left.heart::after, .frame .whiskers-left.whiskers::after, .frame .whiskers-left.whiskers-right::after, .frame .whiskers-left::after {
+  left: 2px;
+  transform: rotate(-10deg);
+}
+.frame .whiskers-left::after {
+  left: 5px;
+  transform: rotate(-20deg);
+}
+.frame .whiskers-right {
+  right: 10%;
+  transform: rotate(-10deg);
+}
+.frame .whiskers-right::before, .frame .body .whiskers-right.heart::after, .frame .whiskers-right.whiskers::after, .frame .whiskers-right.whiskers-left::after, .frame .whiskers-right::after {
+  right: 2px;
+  transform: rotate(10deg);
+}
+.frame .whiskers-right::after {
+  right: 5px;
+  transform: rotate(20deg);
+}
+.frame .ear, .frame .ear-right, .frame .ear-left {
+  position: absolute;
+  width: 38px;
+  height: 46px;
+  background: #F0A77E;
+  border: 8px solid #A35A37;
+  top: 15%;
+  border-radius: 50%;
+}
+.frame .ear-left {
+  left: 18%;
+  transform: rotate(-45deg);
+}
+.frame .ear-right {
+  right: 18%;
+  transform: rotate(45deg);
 }/*# sourceMappingURL=style.css.map */

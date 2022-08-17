@@ -187,4 +187,68 @@ body {
             transform: translateX(-50%);   
         }
     }
+    .whiskers {
+        position: absolute;
+        width: 105px;
+        height: 2px;
+        background: #7A3B1A;
+        top: 48%;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #7A3B1A;
+            top: 15px;
+        }
+        &::after {
+            @extend ::before;
+            top: 30px;
+        }
+    }
+    .whiskers-left {
+        @extend .whiskers;
+        left: 10%;
+        transform: rotate(10deg);
+        &::before {
+            left: 2px;
+            transform: rotate(-10deg);
+        }
+        &::after {
+            left: 5px;
+            transform: rotate(-20deg);
+        }
+    }
+    .whiskers-right {
+        @extend .whiskers;
+        right: 10%;
+        transform: rotate(-10deg);
+        &::before {
+            right: 2px;
+            transform: rotate(10deg);
+        }
+        &::after {
+            right: 5px;
+            transform: rotate(20deg);
+        }
+    }
+    .ear {
+        position: absolute;
+        width: 38px;
+        height: 46px;
+        background: #F0A77E;
+        border: 8px solid #A35A37;
+        top: 15%;
+        border-radius: 50%;
+    }
+    .ear-left {
+        @extend .ear;
+        left: 18%;
+        transform: rotate(-45deg);
+    }
+    .ear-right {
+        @extend .ear;
+        right: 18%;
+        transform: rotate(45deg);
+    }
 }
