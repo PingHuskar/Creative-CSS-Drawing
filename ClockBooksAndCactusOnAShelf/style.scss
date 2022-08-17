@@ -153,4 +153,50 @@ body {
         top: -180px;
         background: #5AA668;
     }
+    .cactus {
+        width: 100px;
+        height: 180px;
+        position: absolute;
+        left: 380px;
+        top: -180px;
+        .pot {
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            background: blue;
+            .pot-bottom {
+                width: 100%;
+                height: 70%;
+                background: #CE4F17;
+                position: absolute;
+                bottom: 0;
+            }
+            .pot-top {
+                width: 140%;
+                height: 30%;
+                background: #A03D12;
+                position: absolute;
+                top: 0;
+                left: -20%;
+            }
+        }
+        .plant {
+            width: 45%;
+            background: #5AA668;
+            position: absolute;
+            bottom: 50%;
+            border-radius: 50px 50px 0 0;
+        }
+        .plant-left {
+            @extend .plant;
+            height: 35%;
+            left: 5%;
+        }
+        .plant-right {
+            @extend .plant;
+            height: 50%;
+            right: 5%;
+        }
+    }
 }
