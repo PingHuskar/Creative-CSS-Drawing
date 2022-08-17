@@ -1,5 +1,6 @@
 $yellow : #FED90F;
 $mouthColor : #D1B271;
+$collarColor : white;
 * {
     box-sizing: border-box !important;
 }
@@ -18,7 +19,6 @@ body {
     position: relative;
     width: 215px;
     height: 405px;
-    background: green;
     .forehead {
         position: absolute;
         width: 170px;
@@ -179,7 +179,7 @@ body {
         position: absolute;
         width: 110px;
         height: 60px;
-        background: white;
+        background: $collarColor;
         top: 330px;
         left: 10px;
         transform: rotate(15deg);
@@ -190,10 +190,38 @@ body {
         position: absolute;
         width: 20px;
         height: 50px;
-        background: white;
+        background: $collarColor;
         top: 340px;
         left: 150px;
         transform: rotate(-20deg);
         border: 1px solid #000;
+    }
+    .ear {
+        position: absolute;
+        width: 32px;
+        height: 37px;
+        background: $yellow;
+        top: 200px;
+        left: 10px;
+        border-radius: 50%;
+        transform: rotate(10deg);
+        border: 1px solid black;
+        .ear-1 {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 8px;
+            left: 8px;
+            border-left: 1px solid #000;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            .ear-2 {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                top: -3px;
+                border-bottom: 1px solid #000;
+            }
+        }
     }
 }
