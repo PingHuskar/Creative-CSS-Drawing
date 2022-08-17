@@ -67,4 +67,35 @@ body {
 }
 .head .l-eye .pupi-left {
   left: 25px;
+}
+.head .f-side1 {
+  position: absolute;
+  width: 140px;
+  height: 60px;
+  background: #FED90F;
+  top: 185px;
+  left: 30px;
+}
+.head .f-side2 {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background: #FED90F;
+  top: 165px;
+  left: 22px;
+  transform: rotate(-11deg);
+  border-left: 1px solid #000;
+}
+.head .nose {
+  position: absolute;
+  width: 60px;
+  height: 32px;
+  background: #FED90F;
+  top: 175px;
+  left: 130px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
 }/*# sourceMappingURL=style.css.map */
